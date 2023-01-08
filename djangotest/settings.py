@@ -32,14 +32,20 @@ SECRET_KEY = env('SECRET_KEY')
 
 ALLOWED_HOSTS = [
     'localhost',
-    env('ALLOWED_HOST_IP_ADDR')
+    env('ALLOWED_HOSTS_IP_ADDR')
 ]
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8000',
     'http://localhost:8080',
+    'http://localhost:19006',
     env('CORS_ALLOWED_ORIGINS_IP_ADDR')
 ]
+
+# Let's keep the following two for test only
+# Thank goodness: https://gankrin.org/cors-no-access-control-allow-origin-header-error-django/
+# ALLOWED_HOSTS = ['*']
+# CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Application definition
