@@ -1,0 +1,1 @@
+from .schools import SchoolViewSet

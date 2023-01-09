@@ -13,7 +13,7 @@ env = environ.Env(
 )
 
 app_version = 'v1.0.0'
-print('Running django rest app', app_version)
+print('========| Running django rest app', app_version, '|========')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 # BASE_DIR = Path(__file__).resolve().parent.parent
